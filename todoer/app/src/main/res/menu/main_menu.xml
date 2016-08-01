@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--&lt;!&ndash;android:icon="@android:drawable/ic_menu_search"&ndash;&gt;-->
+    <item
+        android:id="@+id/to_do_menu_item"
+        android:title="To Do"
+        android:orderInCategory="50"
+        app:showAsAction="ifRoom"
+        />
+
+    <item
+        android:id="@+id/completed_menu_item"
+        android:title="Completed Tasks"
+        android:orderInCategory="30"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/add_menu_item"
+        android:title="Add New Task"
+        android:orderInCategory="10"
+        app:showAsAction="ifRoom"
+        />
+
+</menu>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:layout_marginLeft="10dp" android:layout_marginTop="10dp">
+
+    <TextView
+        android:id="@+id/titleHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title: "
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/titleName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textSize="20sp"
+        android:textColor="#7D3C98"
+        android:layout_toRightOf="@id/titleHeader"/>
+
+    <TextView
+        android:id="@+id/detailHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Detail Description: "
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/titleName"/>
+
+    <TextView
+        android:id="@+id/detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Detail"
+        android:textSize="20sp"
+        android:layout_marginTop="5dp"
+        android:textColor="#2980B9"
+        android:layout_below="@id/detailHeader" />
+
+    <TextView
+        android:id="@+id/deadlineHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deadline: "
+        android:textSize="21sp"
+        android:layout_below="@id/detail"
+        android:layout_marginTop="43dp"/>
+
+    <TextView
+        android:id="@+id/deadline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deadline"
+        android:textSize="25sp"
+        android:layout_marginTop="40dp"
+        android:textColor="#C0392B"
+        android:layout_toRightOf="@id/deadlineHeader"
+        android:layout_below="@id/detail"/>
+
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOn="Completed!"
+        android:textOff="Uncompleted!"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/deadlineHeader"
+        />
+
+
+</RelativeLayout>

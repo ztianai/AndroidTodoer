@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:layout_marginTop="10dp" android:layout_marginLeft="10dp">
+
+
+
+    <EditText
+        android:id="@+id/addTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="New Task..."
+        android:width="200dp"
+        android:textSize="21sp"
+        />
+
+
+
+    <EditText
+        android:id="@+id/addDescr"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Details about the Task..."
+        android:width="350dp"
+        android:layout_below="@id/addTitle"
+        />
+
+
+
+
+    <Button
+        android:id="@+id/btnTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onButtonClicked"
+        android:layout_marginTop="25dp"
+        android:text="Set Time"
+        android:layout_below="@id/addDescr"
+        android:background="#EBF5FB"
+        />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/addDescr"
+        android:layout_marginTop="38dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="20sp"
+        android:textColor="#E74C3C"
+        android:layout_toRightOf="@id/btnTime"
+        />
+
+
+
+    <Button
+        android:id="@+id/btnDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onButtonClickedDate"
+        android:text="Set Date"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/btnTime"
+        android:background="#EBF5FB"
+        />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/btnTime"
+        android:layout_marginTop="38dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="20sp"
+        android:textColor="#E74C3C"
+        android:layout_toRightOf="@id/btnDate"
+        />
+
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Add New Task!  "
+        android:layout_marginTop="50dp"
+        android:onClick="addNewTask"
+        android:layout_below="@id/btnDate"
+        android:background="#EAFAF1"
+        />
+</RelativeLayout>
